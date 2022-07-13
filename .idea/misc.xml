@@ -3,10 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1695" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1695" />
+        <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.1695" />
+        <entry key="app/src/main/res/layout/activity_leading_death_causes.xml" value="0.16614583333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2635416666666667" />
+        <entry key="app/src/main/res/layout/app_bar_leading_death_causes.xml" value="0.14855072463768115" />
+        <entry key="app/src/main/res/layout/content_leading_death_causes.xml" value="0.14855072463768115" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.2635416666666667" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.14855072463768115" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.2635416666666667" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.14855072463768115" />
+        <entry key="app/src/main/res/layout/fragment_leading_death_causes.xml" value="0.14855072463768115" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.2635416666666667" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.2635416666666667" />
+        <entry key="app/src/main/res/menu/leading_death_causes.xml" value="0.15625" />
       </map>
     </option>
   </component>

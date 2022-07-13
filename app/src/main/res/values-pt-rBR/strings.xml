@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Configurações</string>
+    <string name="navigation_drawer_open">Abrir menu de navegação</string>
+    <string name="navigation_drawer_close">Fechar menu de navegação</string>
+    <string name="nav_header_desc">Cabeçalho de navegação</string>
+    <string name="menu_about">Sobre</string>
+    <string name="menu_home">Início</string>
+    <string name="menu_leading_death_causes">Principais Causas de Morte</string>
+    <string name="home_text">Bem vindos ao meu app! ;)</string>
+    <string name="home_alert_title">Informações do App</string>
+    <string name="home_alert_description">Este aplicativo está sendo desenvolvido por:\\n\\nEduardo Viana Pessoa</string>
+</resources>

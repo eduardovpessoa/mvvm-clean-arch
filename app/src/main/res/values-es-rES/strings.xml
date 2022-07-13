@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_alert_description">Esta aplicación está siendo desarrollada por:\\n\\nEduardo Viana Pessoa</string>
+    <string name="home_alert_title">Informacion de la Applicacion</string>
+    <string name="home_text">¡Bienvenido a mi aplicación! ;)</string>
+    <string name="menu_leading_death_causes">Principales Causas de Muerte</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_about">Sobre</string>
+    <string name="nav_header_desc">Encabezado de navegación</string>
+    <string name="navigation_drawer_close">Cerrar menú de navegación</string>
+    <string name="navigation_drawer_open">Abrir menú de navegación</string>
+    <string name="action_settings">Ajustes</string>
+</resources>

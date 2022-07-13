@@ -1,40 +1,32 @@
 package br.com.eduardovpessoa.ui.leadingdeathcauses
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import br.com.eduardovpessoa.R
-import br.com.eduardovpessoa.databinding.FragmentFirstBinding
+import androidx.fragment.app.Fragment
+import br.com.eduardovpessoa.databinding.FragmentLeadingDeathCausesBinding
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
 class LeadingDeathCausesFragment : Fragment() {
 
-    private var _binding: FragmentFirstBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private var _binding: FragmentLeadingDeathCausesBinding? = null
     private val binding get() = _binding!!
+    private val viewModel: LeadingDeathCausesViewModel by viewModel()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
-        _binding = FragmentFirstBinding.inflate(inflater, container, false)
+    ): View {
+        _binding = FragmentLeadingDeathCausesBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-        }
+        viewModel.fetchLeadingDeathCauses()
     }
 
     override fun onDestroyView() {
