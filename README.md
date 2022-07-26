@@ -25,5 +25,5 @@ Instructions to run:
 3. Connect your own device, or click to run using an emulator
 4. The Android Studio will download the dependencies with gradle and launch the app
 
-<strong>PS: If these options don't work, please, download this `.apk` file and install it directly in your device:</strong>
+<strong>PS: If these options don't work, please, download this `.apk` file and install it directly on your device:</strong>
 <a target="_blank" href="https://drive.google.com/file/d/1ITYEqm3swSjgEI5L6wi7kktArZVekqig/view?usp=sharing">Download APK</a>
