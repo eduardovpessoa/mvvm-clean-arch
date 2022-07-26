@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.14855072463768115" />
         <entry key="app/src/main/res/layout/fragment_leading_death_causes.xml" value="0.14855072463768115" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.2635416666666667" />
+        <entry key="app/src/main/res/layout/row_leading_death_causes.xml" value="0.33" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.2635416666666667" />
         <entry key="app/src/main/res/menu/leading_death_causes.xml" value="0.15625" />
       </map>

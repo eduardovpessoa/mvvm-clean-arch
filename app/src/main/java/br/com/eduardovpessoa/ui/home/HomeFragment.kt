@@ -4,14 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import br.com.eduardovpessoa.R
 import br.com.eduardovpessoa.databinding.FragmentHomeBinding
 import br.com.eduardovpessoa.util.AppConsts.Companion.IMG_HOME_URL
 import coil.load
-import coil.transform.CircleCropTransformation
 
 class HomeFragment : Fragment() {
 
@@ -31,7 +28,6 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.imgHome.load(IMG_HOME_URL) {
             crossfade(true)
-            transformations(CircleCropTransformation())
         }
         binding.txtHome.setText(R.string.home_text)
     }

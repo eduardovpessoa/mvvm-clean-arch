@@ -5,7 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.eduardovpessoa.databinding.FragmentLeadingDeathCausesBinding
+import com.google.android.material.snackbar.Snackbar
+import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LeadingDeathCausesFragment : Fragment() {
@@ -25,8 +30,37 @@ class LeadingDeathCausesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.recyclerDeathCauses.layoutManager = LinearLayoutManager(view.context)
+        binding.recyclerDeathCauses.addItemDecoration(
+            DividerItemDecoration(
+                view.context,
+                DividerItemDecoration.HORIZONTAL
+            )
+        )
 
-        viewModel.fetchLeadingDeathCauses()
+        //Request the data
+        viewLifecycleOwner.lifecycleScope.launchWhenCreated {
+            viewModel.fetchLeadingDeathCauses()
+        }
+
+        //Collects the data
+        viewLifecycleOwner.lifecycleScope.launchWhenResumed {
+            viewModel.leadingDeathCauses.collect { list ->
+                if (!list.isNullOrEmpty()) {
+                    binding.recyclerDeathCauses.adapter = LeadingDeathCausesAdapter(list)
+                }
+            }
+        }
+
+        //Displays an error message
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.errorWhenFetchingData.collect {
+                if (it.isNotEmpty()) {
+                    Snackbar.make(view, it, Snackbar.LENGTH_LONG).show()
+                    viewModel.clearErrorMessage()
+                }
+            }
+        }
     }
 
     override fun onDestroyView() {
