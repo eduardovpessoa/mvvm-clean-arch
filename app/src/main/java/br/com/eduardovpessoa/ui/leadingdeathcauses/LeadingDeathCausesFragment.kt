@@ -34,7 +34,7 @@ class LeadingDeathCausesFragment : Fragment() {
         binding.recyclerDeathCauses.addItemDecoration(
             DividerItemDecoration(
                 view.context,
-                DividerItemDecoration.HORIZONTAL
+                DividerItemDecoration.VERTICAL
             )
         )
 
