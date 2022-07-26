@@ -8,7 +8,7 @@ Clean Architecture App using MVVM (Model-View-ViewModel)
 <img src="https://user-images.githubusercontent.com/16106059/180969094-087995d1-53ec-48fe-9c04-8ebe94dd4f7a.png" width="150">
 </p>
 
-Data Source: <a href="https://data.cityofnewyork.us/Health/New-York-City-Leading-Causes-of-Death/jb7j-dtam">New York City Leading Causes of Death</a>
+Data Source: <a target="_blank" href="https://data.cityofnewyork.us/Health/New-York-City-Leading-Causes-of-Death/jb7j-dtam">New York City Leading Causes of Death</a>
 
 Included Translations: (English 🇺🇸, Spanish 🇪🇸 and Portuguese 🇧🇷)
 
@@ -26,4 +26,4 @@ Instructions to run:
 4. The Android Studio will download the dependencies with gradle and launch the app
 
 <strong>PS: If these options don't work, please, download this `.apk` file and install it directly in your device:</strong>
-<a href="https://drive.google.com/file/d/1ITYEqm3swSjgEI5L6wi7kktArZVekqig/view?usp=sharing">Download APK</a>
+<a target="_blank" href="https://drive.google.com/file/d/1ITYEqm3swSjgEI5L6wi7kktArZVekqig/view?usp=sharing">Download APK</a>
